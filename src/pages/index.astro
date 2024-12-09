@@ -1,109 +1,204 @@
 ---
 
-
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenidos a mi Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <ul class="social-media">
-                <li><a href="https://linkedin.com">LinkedIn</a></li>
-                <li><a href="https://github.com">Github</a></li>
-                <li><a href="https://twitter.com">Twitter</a></li>
-                <li><a href="#">Es</a></li>
-            </ul>
-        </nav>
-        <div class="hero-section">
-            <h1>CREANDO HERMOSAS E INTUITIVAS INTERFACES DE USUARIO</h1>
-            <p>Desarrollo interfaces que mejoren las interacciones de los usuarios e impulsen conversiones</p>
-            <a href="#contacto" class="cta-button">Contacto</a>
-            <img src="ruta-de-la-imagen.jpg" alt="Diseño de interfaz en una pantalla de laptop">
+    <head>
+        <meta
+            name="description"
+            content="Portafolio personal sobre diseño web"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bienvenidos a mi Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <ul class="social-media">
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/magali-rodriguez-424a65275/"
+                            >LinkedIn</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            aria-label="Mi perfil de github"
+                            target="_blank"
+                            href="https://github.com/magalidev">GitHub</a
+                        >
+                    </li>
+                    <li><a href="#">Es</a></li>
+                </ul>
+            </nav>
+            <div class="hero-section">
+                <h1>CREANDO HERMOSAS E INTUITIVAS INTERFACES DE USUARIO</h1>
+                <p>
+                    Desarrollo interfaces que mejoren las interacciones de los
+                    usuarios e impulsen conversiones
+                </p>
+                <a href="#contacto" class="cta-button">Contacto</a>
+                <br />
+                <img
+                    src="ruta-de-la-imagen.jpg"
+                    alt="Diseño de interfaz en una pantalla de laptop"
+                />
+            </div>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <h1>Cool contrast</h1>
+                <p>hola</p>
+                <div class="button">
+                    <button>botón</button>
+                </div>
+                <img src="" alt="" />
+            </div>
+            <div class="card">
+                <h1>Cool contrast</h1>
+                <p>hola</p>
+                <div class="button">
+                    <button>botón</button>
+                </div>
+                <img src="" alt="" />
+            </div>
         </div>
-    </header>
-</body>
+    </body>
 </html>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: white;
-}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: #ffffff;
+    }
+    h1 {
+        font-weight: bold;
+    }
 
-header {
-    padding: 20px;
-    background: linear-gradient(135deg, #1d1d1d, #1c1c1c);
-}
+    header {
+        padding: 20px;
+        background-image: url(/public/hero-blur-texture.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 18px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
+    nav ul li {
+        margin: 0 15px;
+    }
 
-nav ul li {
-    margin: 0 15px;
-}
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        color: rgb(167, 162, 162);
+    }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+    .social-media {
+        margin-left: auto;
+        display: flex;
+    }
 
-.social-media {
-    margin-left: auto;
-    display: flex;
-}
+    .social-media li {
+        margin: 0 10px;
+    }
 
-.social-media li {
-    margin: 0 10px;
-}
+    .hero-section {
+        text-align: center;
+        padding: 100px 20px;
+    }
 
-.hero-section {
-    text-align: center;
-    padding: 100px 20px;
-}
+    .hero-section h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        background: -webkit-linear-gradient(#ffffff, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-.hero-section h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    background: -webkit-linear-gradient(#ffffff, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    .hero-section p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
 
-.hero-section p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #18a058;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+    .cta-button:hover {
+        background-color: #13884a;
+    }
+    .hero-section img {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    .cards {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #18a058;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
+    .card {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+    .card button {
+        border-radius: 10px;
+        border: none;
+        width: 100px;
+        font-size: 15px;
+        padding: 5px 0px 5px 0px;
+    }
 
-.hero-section img {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-}
+    @media (max-width: 800px) {
+        nav {
+            display: none;
+        }
+        p {
+            text-wrap: balance;
+        }
+    }
 </style>
